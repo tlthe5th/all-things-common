@@ -6,7 +6,7 @@ An open-source bridge connecting contemporary critiques of economic exploitation
 ---
 
 ## 1. The Critique of Extraction
-The repository frames modern economic struggles—such as wage stagnation, housing shortages, and high costs of living—as symptoms of systemic hoarding. It positions these issues alongside ancient scriptural frameworks that reject permanent land ownership and wealth concentration.
+Wage stagnation, housing shortages, and soaring living costs are not accidental—they are the direct result of systemic hoarding and extraction. Long before modern political manifestos existed, the Greek Scriptures protected every family's permanent home inheritance (*κληρονομία*) while outlawing speculative land buyouts, wealth concentration, and debt slavery.
 
 ## 2. Scriptural and Historical Foundations
 The project highlights several primary texts and principles from the Greek Scriptures:
