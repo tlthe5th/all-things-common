@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jubilee Housing Extraction Calculator | All Things Common</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --danger: #f87171;
+      --success: #4ade80;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; font-family: system-ui, -apple-system, sans-serif; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    h1 { margin: 0 0 0.5rem; font-size: 1.85rem; }
+    .subtitle { color: var(--accent); font-style: italic; margin: 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1.25rem;
+    }
+    button:hover { opacity: 0.9; }
+    .results { display: none; }
+    .stat-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat-value {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--danger);
+      margin: 0.25rem 0;
+    }
+    .stat-value.jubilee { color: var(--success); }
+    .scripture-note {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Jubilee Housing Extraction Calculator</h1>
+      <p class="subtitle">"And the land shall not be sold permanently, for the land is mine..." — Leviticus 25:23 (LXX)</p>
+    </header>
+
+    <div class="card">
+      <div class="grid">
+        <div>
+          <label for="mode">Housing Situation</label>
+          <select id="mode" onchange="toggleInputs()">
+            <option value="rent">Renting from a Landlord</option>
+            <option value="own">Paying Mortgage &amp; Property Tax</option>
+          </select>
+        </div>
+        <div>
+          <label for="income">Annual Take-Home Income ($)</label>
+          <input type="number" id="income" value="48000" min="1">
+        </div>
+        <div>
+          <label for="years">Time Horizon (Years)</label>
+          <input type="number" id="years" value="30" min="1" max="60">
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top: 1rem;">
+        <div id="rentGroup">
+          <label for="monthlyRent">Monthly Rent ($)</label>
+          <input type="number" id="monthlyRent" value="1600" min="0">
+        </div>
+        <div id="ownGroup1" style="display:none;">
+          <label for="monthlyInterest">Avg. Monthly Mortgage Interest ($)</label>
+          <input type="number" id="monthlyInterest" value="1100" min="0">
+        </div>
+        <div id="ownGroup2" style="display:none;">
+          <label for="annualTax">Annual Property Tax ($)</label>
+          <input type="number" id="annualTax" value="4200" min="0">
+        </div>
+      </div>
+
+      <button onclick="calculate()">Calculate Lifetime Extraction</button>
+    </div>
+
+    <div class="card results" id="results">
+      <h2 style="margin-top:0;">The Extraction Ledger</h2>
+      <div class="grid">
+        <div class="stat-box">
+          <div>Total Extracted Wealth</div>
+          <div class="stat-value" id="totalExtracted">$0</div>
+          <small style="color:var(--muted);">Zero equity gained from rent, interest, or tax</small>
+        </div>
+        <div class="stat-box">
+          <div>Years of Labor Taken</div>
+          <div class="stat-value" id="yearsWorked">0 yrs</div>
+          <small style="color:var(--muted);">100% of your take-home pay during those years</small>
+        </div>
+        <div class="stat-box">
+          <div>Biblical Jubilee Extraction</div>
+          <div class="stat-value jubilee">$0</div>
+          <small style="color:var(--muted);">1 tax-free family inheritance (κληρονομία)</small>
+        </div>
+      </div>
+
+      <div class="scripture-note">
+        <strong>1 Kingdoms (1 Samuel) 8:15–17 (LXX):</strong> When Israel demanded a centralized king, the prophet warned that taking even <strong>10%</strong> of their crops and flocks would turn free families into servants (<em>δοῦλοι</em>). Modern rent, interest, and perpetual property tax routinely extract <strong>30% to 50%+</strong> of a worker's life.
+      </div>
+    </div>
+
+    <footer>
+      Open-Source Tool (AGPL-3.0) | <a href="./">Back to Repository</a> | <a href="https://housingjubilee.ai" target="_blank">HousingJubilee.ai</a> | <a href="https://spirituallysmart.com" target="_blank">SpirituallySmart.com</a>
+    </footer>
+  </div>
+
+  <script>
+    function toggleInputs() {
+      const mode = document.getElementById('mode').value;
+      document.getElementById('rentGroup').style.display = mode === 'rent' ? 'block' : 'none';
+      document.getElementById('ownGroup1').style.display = mode === 'own' ? 'block' : 'none';
+      document.getElementById('ownGroup2').style.display = mode === 'own' ? 'block' : 'none';
+    }
+
+    function calculate() {
+      const mode = document.getElementById('mode').value;
+      const income = parseFloat(document.getElementById('income').value) || 1;
+      const years = parseFloat(document.getElementById('years').value) || 30;
+      let total = 0;
+
+      if (mode === 'rent') {
+        const rent = parseFloat(document.getElementById('monthlyRent').value) || 0;
+        total = rent * 12 * years;
+      } else {
+        const interest = parseFloat(document.getElementById('monthlyInterest').value) || 0;
+        const tax = parseFloat(document.getElementById('annualTax').value) || 0;
+        total = (interest * 12 * years) + (tax * years);
+      }
+
+      const yearsLost = (total / income).toFixed(1);
+      document.getElementById('totalExtracted').textContent = '$' + total.toLocaleString();
+      document.getElementById('yearsWorked').textContent = yearsLost + ' yrs';
+      document.getElementById('results').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
