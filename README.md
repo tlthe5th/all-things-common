@@ -17,6 +17,29 @@ The Greek Scriptures establish four foundational laws against economic extractio
 * **The Mission to the Poor — Λουκᾶς (Luke) 4:18 / Ἠσαΐας (Isaiah) 61:1 (LXX):** *"The πνεῦμα (spirit) of Κύριος (the Lord) is upon me, because of which it anointed me to proclaim good news to the πτωχοί (poor); it has sent me to proclaim ἄφεσις (release) to the captives."*
 * **Voluntary vs. Coerced Sharing — Πράξεις (Acts) 5:4 & Ἰωάννης (John) 4:24:** Property sharing in **Πράξεις** (Acts) was strictly voluntary (*"While it remained, did it not remain your own?"*). True **κοινωνία** (fellowship/community) flows from **μετάνοια** (repentance) and **πνεῦμα ἅγιον** (spirit holy)—which is **Θεός** (God) the **Πατήρ** (Father) and **Χριστός** (the Christ) dwelling in the believer—breaking **πλεονεξία** (greed) from the inside out.
 
+## 3. Truth and Love Toward the Neighbor
+
+Extraction survives on two things: hidden deception and harm to the **πλησίον** (neighbor). **Παῦλος** (Paul) addresses both directly:
+
+* **Speak Truth With Your Neighbor — Ἐφεσίους (Ephesians) 4:25:**  
+  > *"Διὸ ἀποθέμενοι τὸ ψεῦδος λαλεῖτε ἀλήθειαν ἕκαστος μετὰ τοῦ πλησίον αὐτοῦ, ὅτι ἐσμὲν ἀλλήλων μέλη."*  
+  > ("Therefore, putting away the ψεῦδος [lie/falsehood], λαλεῖτε ἀλήθειαν [speak truth] each one with his πλησίον [neighbor], for we are μέλη [members] of one another.")
+
+* **Love Works No Evil to the Neighbor — Ῥωμαίους (Romans) 13:8–10:**  
+  > *"Μηδενὶ μηδὲν ὀφείλετε, εἰ μὴ τὸ ἀγαπᾶν ἀλλήλους· ὁ γὰρ ἀγαπῶν τὸν ἕτερον νόμον πεπλήρωκε... ἡ ἀγάπη τῷ πλησίον κακὸν οὐκ ἐργάζεται· πλήρωμα οὖν νόμου ἡ ἀγάπη."*  
+  > ("Owe no one anything, except to ἀγαπᾶν [love] one another; for the one loving another has fulfilled the νόμος [law]... ἀγάπη [love] works no κακόν [evil] to the πλησίον [neighbor]; therefore ἀγάπη [love] is the πλήρωμα [fulfillment] of the νόμος [law].")
+
+* **The Whole Law Fulfilled in One Word — Γαλάτας (Galatians) 5:14:**  
+  > *"ὁ γὰρ πᾶς νόμος ἐν ἑνὶ λόγῳ πληροῦται, ἐν τῷ ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν."*  
+  > ("For the whole νόμος [law] is fulfilled in one λόγος [word]: 'you shall love your πλησίον [neighbor] as yourself.'")
+
+### Why This Matters for Housing and Extraction
+* **Extraction depends on the ψεῦδος (lie):** Hidden fees, buried loan terms, inflated "market rate" narratives, and the claim that renting forever is normal all rely on concealment. **Παῦλος** (Paul) commands putting the **ψεῦδος** (lie) away. The Jubilee Calculator exists to **λαλεῖν ἀλήθειαν** (speak truth) with the **πλησίον** (neighbor) by showing the real lifetime cost in plain numbers.
+* **We are μέλη (members) of one another:** A system that drains one member to enrich another is a body consuming itself. That is **ἄλογος** (illogical) at its root.
+* **ἀγάπη (love) works no κακόν (evil) to the πλησίον (neighbor):** Pricing families out of shelter, hoarding homes as investment portfolios, and binding people in lifelong debt all work **κακόν** (evil) to the **πλησίον** (neighbor). By **Παῦλος** (Paul's) own standard, that is a failure to fulfill the **νόμος** (law).
+* **"Owe no one anything except to love":** Endless debt is the exact opposite of this command. The only debt a follower of **Χριστός Ἰησοῦς** (Christ Jesus) carries forever is **ἀγάπη** (love).
+* **ἀγάπη (love) cannot be coerced:** It flows from **πνεῦμα** (spirit) working inside the **καρδία** (heart) through **πίστις** (faith) in **Χριστός Ἰησοῦς** (Christ Jesus), tying directly back to the voluntary sharing in **Πράξεις** (Acts) 5:4.
+
 ---
 
 ## Repository Map & Tools
