@@ -1,9 +1,12 @@
 # All Things Common — ἅπαντα κοινά (all things common)
+
 > *"From each, to each, as any had need — written 1,800 years before Marx."*
 
 An open-source bridge connecting the workers' cry against economic exploitation to the original communal life recorded in the **Septuagint (LXX)** and the **Greek New Testament**.
 
 🧮 **[Run the Jubilee Housing Extraction Calculator](./calculator.html)** to see how many years of your life go to rent, mortgage interest, and property tax.
+
+![Jubilee Housing Extraction Calculator Preview](assets/calculator.png)
 
 ---
 
@@ -44,6 +47,7 @@ Extraction survives on two things: hidden deception and harm to the **πλησί
 
 ## Repository Map & Tools
 * [`/calculator.html`](./calculator.html) — **Jubilee Rent & Property Tax Extraction Calculator**
+* [`/assets/calculator.png`](./assets/calculator.png) — **Calculator UI Preview**
 * [`/scripture`](./scripture) — Verified passages on land, debt, and community from the **Septuagint (LXX)** and Greek New Testament.
 * [`/two-columns`](./two-columns) — Side-by-side comparison of modern manifesto goals and ancient biblical law.
 * [`/dialogues`](./dialogues) — Q&A addressing common objections from materialists and leftists.
